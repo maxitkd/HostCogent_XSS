@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <!-- For a better reading I only show the solution of XSS vulnerability instead of the entire code-->
+        <form id="form1" action="XSS_post.php" method="POST">
+            <div class="form-group">
+                 <!--Data validation & output scaping, -->
+                <input type="text" class="form-control bordes" id="searchFor" name="searchFor" onblur="sanitization(this)"
+                 placeholder="search" pattern="[A-Za-z0-9]{3,30}">
+                <span id="help_search" class="help-block" style="display: none;"> Please insert a valid search.
+                </span></div>  
+
+            <input name="goButton" type="submit" value="go">
+
+
+
+    
+    
+
+
+
+
+        </form>
+
+    </body>
+
+
+</html>
